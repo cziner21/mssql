@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEEB7282-0AD1-4C14-94F9-05453B55F799}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mssqlteszt</RootNamespace>
+    <AssemblyName>mssqlteszt</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addDiak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addDiak.Designer.cs">
+      <DependentUpon>addDiak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addNyelvizsga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNyelvizsga.Designer.cs">
+      <DependentUpon>addNyelvizsga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addSzak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSzak.Designer.cs">
+      <DependentUpon>addSzak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addVaros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addVaros.Designer.cs">
+      <DependentUpon>addVaros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beadandoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>beadandoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="deleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteForm.Designer.cs">
+      <DependentUpon>deleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getDiak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="getDiak.Designer.cs">
+      <DependentUpon>getDiak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify.Designer.cs">
+      <DependentUpon>modify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addDiak.resx">
+      <DependentUpon>addDiak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addNyelvizsga.resx">
+      <DependentUpon>addNyelvizsga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSzak.resx">
+      <DependentUpon>addSzak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addVaros.resx">
+      <DependentUpon>addVaros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteForm.resx">
+      <DependentUpon>deleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="getDiak.resx">
+      <DependentUpon>getDiak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modify.resx">
+      <DependentUpon>modify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="beadandoDataSet.xsc">
+      <DependentUpon>beadandoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="beadandoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>beadandoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="beadandoDataSet.xss">
+      <DependentUpon>beadandoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iranyitoszam.csv" />
+    <None Include="Resources\user_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_edit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
