@@ -76,6 +76,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>beadandoDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="customFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customFilter.Designer.cs">
+      <DependentUpon>customFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="deleteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addVaros.resx">
       <DependentUpon>addVaros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customFilter.resx">
+      <DependentUpon>customFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="deleteForm.resx">
       <DependentUpon>deleteForm.cs</DependentUpon>
@@ -167,7 +176,6 @@
     <None Include="Resources\information.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\iranyitoszam.csv" />
     <None Include="Resources\user_edit.png" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +186,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\book_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\language.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\language1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\szakok.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

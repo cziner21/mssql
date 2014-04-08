@@ -18,7 +18,7 @@ namespace mssqlteszt
         public mainForm() {
             InitializeComponent();
             
-               
+
         }
 
         private void összesDiákLekéréseToolStripMenuItem_Click(object sender, EventArgs e) {
@@ -98,8 +98,8 @@ namespace mssqlteszt
             d.Show();
         }
 
-        
-
-        
+        private void egyediLekérdezésToolStripMenuItem_Click(object sender, EventArgs e) {
+            
+        }        
     }
 }

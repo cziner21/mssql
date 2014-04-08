@@ -18,10 +18,8 @@ namespace mssqlteszt
     {
         public addDiak() {
             InitializeComponent();
-            
-           
-            
-                
+
+                      
         }
 
         private void hozzaadBtn_Click(object sender, EventArgs e) {
@@ -52,7 +50,7 @@ namespace mssqlteszt
                 cmd.Parameters.AddWithValue("@tel_szam", telefonTbx.Text);
                 cmd.Parameters.AddWithValue("@anyja_neve", anyjaTbx.Text);
                 cmd.Parameters.AddWithValue("@zsebpenz", int.Parse(zsebpenzTbx.Text));
-                cmd.Parameters.AddWithValue("@varos_id", varosIdTbx.Text);
+                cmd.Parameters.AddWithValue("@varos_id", varosIdCbx.Text);
                 cmd.ExecuteNonQuery();
 
 
@@ -60,13 +58,28 @@ namespace mssqlteszt
 
 
                 connection.Close();
-                MessageBox.Show("Sikeres felvitel!", "Siker!");
+                MessageBox.Show("Sikeres felvitel!", "Siker!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void addDiak_Load(object sender, EventArgs e) {
+            
+            this.isk_diak2TableAdapter.Fill(this.beadandoDataSet.isk_diak2);
+
+            
+
+            this.varosIdCbx.DataSource = this.beadandoDataSet.isk_diak2; 
+            this.varosIdCbx.ValueMember = "varos_id";
+        
+        }
+
+        
+
+        
 
        
     }

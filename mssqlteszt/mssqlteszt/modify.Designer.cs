@@ -28,6 +28,18 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.modifyDiak = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nevDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telszamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anyjaneveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zsebpenzDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.varosidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isk_diak2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.beadandoDataSet = new mssqlteszt.beadandoDataSet();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.varodIdTbx = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -44,20 +56,8 @@
             this.diakIdCbx = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.modifyBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.isk_diak2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.beadandoDataSet = new mssqlteszt.beadandoDataSet();
             this.modifyVaros = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nevDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cimDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telszamDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anyjaneveDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zsebpenzDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.varosidDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modifyNyelvvizsga = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
@@ -80,31 +80,32 @@
             this.varosidDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isk_diak2TableAdapter = new mssqlteszt.beadandoDataSetTableAdapters.isk_diak2TableAdapter();
             this.tableAdapterManager = new mssqlteszt.beadandoDataSetTableAdapters.TableAdapterManager();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.varosidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zsebpenzDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anyjaneveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telszamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cimDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nevDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
+            this.isk_varosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.isk_varosTableAdapter = new mssqlteszt.beadandoDataSetTableAdapters.isk_varosTableAdapter();
+            this.isk_varosDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.modifyDiak.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.isk_diak2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.beadandoDataSet)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.modifyVaros.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.modifyNyelvvizsga.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.modifySzak.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.isk_varosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.isk_varosDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -131,6 +132,99 @@
             this.modifyDiak.TabIndex = 0;
             this.modifyDiak.Text = "Diákok szerkesztése";
             this.modifyDiak.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.panel1);
+            this.groupBox2.Location = new System.Drawing.Point(350, 25);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(818, 240);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Előnézet";
+            // 
+            // panel1
+            // 
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(812, 221);
+            this.panel1.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nevDataGridViewTextBoxColumn,
+            this.cimDataGridViewTextBoxColumn,
+            this.telszamDataGridViewTextBoxColumn,
+            this.anyjaneveDataGridViewTextBoxColumn,
+            this.zsebpenzDataGridViewTextBoxColumn,
+            this.varosidDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.isk_diak2BindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(812, 221);
+            this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nevDataGridViewTextBoxColumn
+            // 
+            this.nevDataGridViewTextBoxColumn.DataPropertyName = "nev";
+            this.nevDataGridViewTextBoxColumn.HeaderText = "nev";
+            this.nevDataGridViewTextBoxColumn.Name = "nevDataGridViewTextBoxColumn";
+            // 
+            // cimDataGridViewTextBoxColumn
+            // 
+            this.cimDataGridViewTextBoxColumn.DataPropertyName = "cim";
+            this.cimDataGridViewTextBoxColumn.HeaderText = "cim";
+            this.cimDataGridViewTextBoxColumn.Name = "cimDataGridViewTextBoxColumn";
+            // 
+            // telszamDataGridViewTextBoxColumn
+            // 
+            this.telszamDataGridViewTextBoxColumn.DataPropertyName = "tel_szam";
+            this.telszamDataGridViewTextBoxColumn.HeaderText = "tel_szam";
+            this.telszamDataGridViewTextBoxColumn.Name = "telszamDataGridViewTextBoxColumn";
+            // 
+            // anyjaneveDataGridViewTextBoxColumn
+            // 
+            this.anyjaneveDataGridViewTextBoxColumn.DataPropertyName = "anyja_neve";
+            this.anyjaneveDataGridViewTextBoxColumn.HeaderText = "anyja_neve";
+            this.anyjaneveDataGridViewTextBoxColumn.Name = "anyjaneveDataGridViewTextBoxColumn";
+            // 
+            // zsebpenzDataGridViewTextBoxColumn
+            // 
+            this.zsebpenzDataGridViewTextBoxColumn.DataPropertyName = "zsebpenz";
+            this.zsebpenzDataGridViewTextBoxColumn.HeaderText = "zsebpenz";
+            this.zsebpenzDataGridViewTextBoxColumn.Name = "zsebpenzDataGridViewTextBoxColumn";
+            // 
+            // varosidDataGridViewTextBoxColumn
+            // 
+            this.varosidDataGridViewTextBoxColumn.DataPropertyName = "varos_id";
+            this.varosidDataGridViewTextBoxColumn.HeaderText = "varos_id";
+            this.varosidDataGridViewTextBoxColumn.Name = "varosidDataGridViewTextBoxColumn";
+            // 
+            // isk_diak2BindingSource
+            // 
+            this.isk_diak2BindingSource.DataMember = "isk_diak2";
+            this.isk_diak2BindingSource.DataSource = this.beadandoDataSet;
+            // 
+            // beadandoDataSet
+            // 
+            this.beadandoDataSet.DataSetName = "beadandoDataSet";
+            this.beadandoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox1
             // 
@@ -287,48 +381,9 @@
             this.modifyBtn.UseVisualStyleBackColor = true;
             this.modifyBtn.Click += new System.EventHandler(this.modifyBtn_Click);
             // 
-            // panel1
-            // 
-            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 16);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(812, 221);
-            this.panel1.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nevDataGridViewTextBoxColumn,
-            this.cimDataGridViewTextBoxColumn,
-            this.telszamDataGridViewTextBoxColumn,
-            this.anyjaneveDataGridViewTextBoxColumn,
-            this.zsebpenzDataGridViewTextBoxColumn,
-            this.varosidDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.isk_diak2BindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(812, 221);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // isk_diak2BindingSource
-            // 
-            this.isk_diak2BindingSource.DataMember = "isk_diak2";
-            this.isk_diak2BindingSource.DataSource = this.beadandoDataSet;
-            // 
-            // beadandoDataSet
-            // 
-            this.beadandoDataSet.DataSetName = "beadandoDataSet";
-            this.beadandoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // modifyVaros
             // 
+            this.modifyVaros.Controls.Add(this.button2);
             this.modifyVaros.Controls.Add(this.panel2);
             this.modifyVaros.Location = new System.Drawing.Point(4, 22);
             this.modifyVaros.Name = "modifyVaros";
@@ -340,73 +395,11 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView2);
+            this.panel2.Controls.Add(this.isk_varosDataGridView);
             this.panel2.Location = new System.Drawing.Point(3, 153);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(543, 127);
+            this.panel2.Size = new System.Drawing.Size(653, 285);
             this.panel2.TabIndex = 0;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn1,
-            this.nevDataGridViewTextBoxColumn1,
-            this.cimDataGridViewTextBoxColumn1,
-            this.telszamDataGridViewTextBoxColumn1,
-            this.anyjaneveDataGridViewTextBoxColumn1,
-            this.zsebpenzDataGridViewTextBoxColumn1,
-            this.varosidDataGridViewTextBoxColumn1});
-            this.dataGridView2.DataSource = this.isk_diak2BindingSource;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(543, 127);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // nevDataGridViewTextBoxColumn1
-            // 
-            this.nevDataGridViewTextBoxColumn1.DataPropertyName = "nev";
-            this.nevDataGridViewTextBoxColumn1.HeaderText = "nev";
-            this.nevDataGridViewTextBoxColumn1.Name = "nevDataGridViewTextBoxColumn1";
-            // 
-            // cimDataGridViewTextBoxColumn1
-            // 
-            this.cimDataGridViewTextBoxColumn1.DataPropertyName = "cim";
-            this.cimDataGridViewTextBoxColumn1.HeaderText = "cim";
-            this.cimDataGridViewTextBoxColumn1.Name = "cimDataGridViewTextBoxColumn1";
-            // 
-            // telszamDataGridViewTextBoxColumn1
-            // 
-            this.telszamDataGridViewTextBoxColumn1.DataPropertyName = "tel_szam";
-            this.telszamDataGridViewTextBoxColumn1.HeaderText = "tel_szam";
-            this.telszamDataGridViewTextBoxColumn1.Name = "telszamDataGridViewTextBoxColumn1";
-            // 
-            // anyjaneveDataGridViewTextBoxColumn1
-            // 
-            this.anyjaneveDataGridViewTextBoxColumn1.DataPropertyName = "anyja_neve";
-            this.anyjaneveDataGridViewTextBoxColumn1.HeaderText = "anyja_neve";
-            this.anyjaneveDataGridViewTextBoxColumn1.Name = "anyjaneveDataGridViewTextBoxColumn1";
-            // 
-            // zsebpenzDataGridViewTextBoxColumn1
-            // 
-            this.zsebpenzDataGridViewTextBoxColumn1.DataPropertyName = "zsebpenz";
-            this.zsebpenzDataGridViewTextBoxColumn1.HeaderText = "zsebpenz";
-            this.zsebpenzDataGridViewTextBoxColumn1.Name = "zsebpenzDataGridViewTextBoxColumn1";
-            // 
-            // varosidDataGridViewTextBoxColumn1
-            // 
-            this.varosidDataGridViewTextBoxColumn1.DataPropertyName = "varos_id";
-            this.varosidDataGridViewTextBoxColumn1.HeaderText = "varos_id";
-            this.varosidDataGridViewTextBoxColumn1.Name = "varosidDataGridViewTextBoxColumn1";
             // 
             // modifyNyelvvizsga
             // 
@@ -585,58 +578,64 @@
             this.tableAdapterManager.isk_varosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = mssqlteszt.beadandoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // groupBox2
+            // button2
             // 
-            this.groupBox2.Controls.Add(this.panel1);
-            this.groupBox2.Location = new System.Drawing.Point(350, 25);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(818, 240);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Előnézet";
+            this.button2.Location = new System.Drawing.Point(677, 237);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // varosidDataGridViewTextBoxColumn
+            // isk_varosBindingSource
             // 
-            this.varosidDataGridViewTextBoxColumn.DataPropertyName = "varos_id";
-            this.varosidDataGridViewTextBoxColumn.HeaderText = "varos_id";
-            this.varosidDataGridViewTextBoxColumn.Name = "varosidDataGridViewTextBoxColumn";
+            this.isk_varosBindingSource.DataMember = "isk_varos";
+            this.isk_varosBindingSource.DataSource = this.beadandoDataSet;
             // 
-            // zsebpenzDataGridViewTextBoxColumn
+            // isk_varosTableAdapter
             // 
-            this.zsebpenzDataGridViewTextBoxColumn.DataPropertyName = "zsebpenz";
-            this.zsebpenzDataGridViewTextBoxColumn.HeaderText = "zsebpenz";
-            this.zsebpenzDataGridViewTextBoxColumn.Name = "zsebpenzDataGridViewTextBoxColumn";
+            this.isk_varosTableAdapter.ClearBeforeFill = true;
             // 
-            // anyjaneveDataGridViewTextBoxColumn
+            // isk_varosDataGridView
             // 
-            this.anyjaneveDataGridViewTextBoxColumn.DataPropertyName = "anyja_neve";
-            this.anyjaneveDataGridViewTextBoxColumn.HeaderText = "anyja_neve";
-            this.anyjaneveDataGridViewTextBoxColumn.Name = "anyjaneveDataGridViewTextBoxColumn";
+            this.isk_varosDataGridView.AutoGenerateColumns = false;
+            this.isk_varosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.isk_varosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.isk_varosDataGridView.DataSource = this.isk_varosBindingSource;
+            this.isk_varosDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.isk_varosDataGridView.Location = new System.Drawing.Point(0, 0);
+            this.isk_varosDataGridView.Name = "isk_varosDataGridView";
+            this.isk_varosDataGridView.Size = new System.Drawing.Size(653, 285);
+            this.isk_varosDataGridView.TabIndex = 0;
             // 
-            // telszamDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.telszamDataGridViewTextBoxColumn.DataPropertyName = "tel_szam";
-            this.telszamDataGridViewTextBoxColumn.HeaderText = "tel_szam";
-            this.telszamDataGridViewTextBoxColumn.Name = "telszamDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // cimDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.cimDataGridViewTextBoxColumn.DataPropertyName = "cim";
-            this.cimDataGridViewTextBoxColumn.HeaderText = "cim";
-            this.cimDataGridViewTextBoxColumn.Name = "cimDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "nev";
+            this.dataGridViewTextBoxColumn2.HeaderText = "nev";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // nevDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            this.nevDataGridViewTextBoxColumn.DataPropertyName = "nev";
-            this.nevDataGridViewTextBoxColumn.HeaderText = "nev";
-            this.nevDataGridViewTextBoxColumn.Name = "nevDataGridViewTextBoxColumn";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "megye";
+            this.dataGridViewTextBoxColumn3.HeaderText = "megye";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // idDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "orszag";
+            this.dataGridViewTextBoxColumn4.HeaderText = "orszag";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // modify
             // 
@@ -649,22 +648,23 @@
             this.Load += new System.EventHandler(this.modify_Load);
             this.tabControl1.ResumeLayout(false);
             this.modifyDiak.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.isk_diak2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.beadandoDataSet)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.modifyVaros.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.modifyNyelvvizsga.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.modifySzak.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.isk_varosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.isk_varosDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -684,18 +684,10 @@
         private beadandoDataSetTableAdapters.isk_diak2TableAdapter isk_diak2TableAdapter;
         private beadandoDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nevDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cimDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telszamDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anyjaneveDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zsebpenzDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn varosidDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn nevDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn cimDataGridViewTextBoxColumn2;
@@ -733,5 +725,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn anyjaneveDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn zsebpenzDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn varosidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.BindingSource isk_varosBindingSource;
+        private beadandoDataSetTableAdapters.isk_varosTableAdapter isk_varosTableAdapter;
+        private System.Windows.Forms.DataGridView isk_varosDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

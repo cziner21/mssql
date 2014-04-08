@@ -25,3 +25,4 @@ D:\Work\Programok\sqlmentes\mssqlteszt\mssqlteszt\obj\x86\Debug\mssqlteszt.addVa
 D:\Work\Programok\sqlmentes\mssqlteszt\mssqlteszt\obj\x86\Debug\mssqlteszt.modify.resources
 D:\Work\Programok\sqlmentes\mssqlteszt\mssqlteszt\obj\x86\Debug\mssqlteszt.deleteForm.resources
 D:\Work\Programok\sqlmentes\mssqlteszt\mssqlteszt\obj\x86\Debug\mssqlteszt.addSzak.resources
+D:\Work\Programok\sqlmentes\mssqlteszt\mssqlteszt\obj\x86\Debug\mssqlteszt.customFilter.resources
