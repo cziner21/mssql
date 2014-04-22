@@ -1,0 +1,7 @@
+D:\Work\Programok\SQL\DiakNyelviszga\DiakNyelviszga\bin\Debug\DiakNyelviszga.exe
+D:\Work\Programok\SQL\DiakNyelviszga\DiakNyelviszga\bin\Debug\DiakNyelviszga.pdb
+D:\Work\Programok\SQL\DiakNyelviszga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.mainForm.resources
+D:\Work\Programok\SQL\DiakNyelviszga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.Properties.Resources.resources
+D:\Work\Programok\SQL\DiakNyelviszga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.csproj.GenerateResource.Cache
+D:\Work\Programok\SQL\DiakNyelviszga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.exe
+D:\Work\Programok\SQL\DiakNyelviszga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.pdb
