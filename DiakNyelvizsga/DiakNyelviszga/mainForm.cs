@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DiakNyelvizsga;
 
 namespace DiakNyelviszga
 {
@@ -33,6 +34,30 @@ namespace DiakNyelviszga
         private void szakPbx_Click(object sender, EventArgs e) {
             szak sz = new szak();
             sz.Show();
+        }
+
+        private void diákToolStripMenuItem_Click(object sender, EventArgs e) {
+            addDiak ad = new addDiak();
+            ad.Show();
+        }
+
+        private void infóToolStripMenuItem_Click(object sender, EventArgs e) {
+            AboutBox1 abx = new AboutBox1();
+            abx.Show();
+        }
+
+        private void kilépésToolStripMenuItem_Click(object sender, EventArgs e) {
+            this.Close();
+        }
+
+        private void diákToolStripMenuItem1_Click(object sender, EventArgs e) {
+            diakSearch sd = new diakSearch();
+            sd.Show();
+        }
+
+        private void városToolStripMenuItem1_Click(object sender, EventArgs e) {
+            varosSearch sv = new varosSearch();
+            sv.Show();
         }
 
         

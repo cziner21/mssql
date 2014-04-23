@@ -1,12 +1,15 @@
-d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.exe
-d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.pdb
-d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\bin\Debug\DiakNyelviszga.exe
-d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\bin\Debug\DiakNyelviszga.pdb
 d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.diak.resources
 d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.mainForm.resources
-d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.Properties.Resources.resources
 d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.szak.resources
 d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.csproj.GenerateResource.Cache
-d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\bin\Debug\DiakNyelviszga.exe.config
 d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.varos.resources
 d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.nyelvizsga.resources
+d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.AboutBox1.resources
+d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\bin\Debug\Sql beadandó.exe.config
+d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\bin\Debug\Sql beadandó.exe
+d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\bin\Debug\Sql beadandó.pdb
+d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.Properties.Resources.resources
+d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\Sql beadandó.exe
+d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\Sql beadandó.pdb
+d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.addDiak.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.varosSearch.resources
