@@ -24,30 +24,27 @@ namespace DiakNyelvizsga
 
         private void serachBtn_Click(object sender, EventArgs e) {
             dataGridView1.Update();
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["diakNyelvizsga"];
+            SqlConnection connection = new SqlConnection(settings.ConnectionString);
+            SqlCommand command = connection.CreateCommand();
             try {
-                ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["diakNyelvizsga"];
-                SqlConnection connection = new SqlConnection(settings.ConnectionString);
-                SqlCommand command = connection.CreateCommand();
-
-                
-               
 
                 string query = "SELECT isk_diak2.id, isk_diak2.nev, isk_diak2.cim, isk_diak2.tel_szam, isk_diak2.anyja_neve, isk_diak2.zsebpenz, isk_varos.nev AS Város from isk_diak2 INNER JOIN isk_varos ON isk_diak2.varos_id = isk_varos.id where"; //"Select * From isk_diak2 where";
                 query = query + " 1=1";
                 if (idCbx.Checked) {
                     if (idTbx.TextLength == 0) throw new Exception("Nem adott meg diák ID-t!");
-                    query = query + "AND id LIKE('" + int.Parse(idTbx.Text) + "%') ";
+                    query = query + "AND isk_diak2.id LIKE('" + int.Parse(idTbx.Text) + "%') ";
                 }
                 if (nevCbx.Checked) {
-                    if(nevTbx.TextLength == 0) throw new Exception("Nem adott meg nevet!");
-                    query = query + "AND nev LIKE('" + nevTbx.Text + "%') ";
+                    if (nevTbx.TextLength == 0) throw new Exception("Nem adott meg nevet!");
+                    query = query + "AND isk_diak2.nev LIKE('" + nevTbx.Text + "%') ";
                 }
                 if (cimCbx.Checked) {
-                    if(cimTbx.TextLength == 0) throw new Exception("Nem adott meg címet'");
+                    if (cimTbx.TextLength == 0) throw new Exception("Nem adott meg címet'");
                     query = query + "AND cim LIKE('" + cimTbx.Text + "%') ";
                 }
                 if (telefonCbx.Checked) {
-                    if(telTbx.TextLength == 0) throw new Exception("Nem adott meg telefonszámot!");
+                    if (telTbx.TextLength == 0) throw new Exception("Nem adott meg telefonszámot!");
                     query = query + "AND tel_szam LIKE('" + telTbx.Text + "%') ";
                 }
                 if (anyjaCbx.Checked) {
@@ -60,7 +57,7 @@ namespace DiakNyelvizsga
                 }
                 if (varosCbx.Checked) {
                     string vID = varosId();
-                    
+
                     query = query + "AND varos_id LIKE('" + vID + "%') ";
                 }
 
@@ -73,7 +70,10 @@ namespace DiakNyelvizsga
                 dataGridView1.DataMember = "isk_diak2";
             }
             catch (Exception ex) {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            finally {
+                connection.Close();
             }
         }
 
@@ -129,7 +129,7 @@ namespace DiakNyelvizsga
                 
             }
             catch (Exception ex) {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             finally {
                 connection.Close();

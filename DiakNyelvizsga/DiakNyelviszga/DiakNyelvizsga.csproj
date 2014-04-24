@@ -57,11 +57,47 @@
     <Compile Include="addDiak.Designer.cs">
       <DependentUpon>addDiak.cs</DependentUpon>
     </Compile>
+    <Compile Include="addNyelvizsga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNyelvizsga.Designer.cs">
+      <DependentUpon>addNyelvizsga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addSzak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSzak.Designer.cs">
+      <DependentUpon>addSzak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addVaros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addVaros.Designer.cs">
+      <DependentUpon>addVaros.cs</DependentUpon>
+    </Compile>
     <Compile Include="diak.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="diak.Designer.cs">
       <DependentUpon>diak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editNyelvizsga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editNyelvizsga.Designer.cs">
+      <DependentUpon>editNyelvizsga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editSzak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editSzak.Designer.cs">
+      <DependentUpon>editSzak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editVaros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editVaros.Designer.cs">
+      <DependentUpon>editVaros.cs</DependentUpon>
     </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
@@ -69,11 +105,23 @@
     <Compile Include="mainForm.Designer.cs">
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modify.Designer.cs">
+      <DependentUpon>modify.cs</DependentUpon>
+    </Compile>
     <Compile Include="nyelvizsga.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="nyelvizsga.Designer.cs">
       <DependentUpon>nyelvizsga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nyelvizsgaSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nyelvizsgaSearch.Designer.cs">
+      <DependentUpon>nyelvizsgaSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +130,18 @@
     </Compile>
     <Compile Include="diakSearch.Designer.cs">
       <DependentUpon>diakSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="szakSeacrh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="szakSeacrh.Designer.cs">
+      <DependentUpon>szakSeacrh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tarsitNyelvizsga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tarsitNyelvizsga.Designer.cs">
+      <DependentUpon>tarsitNyelvizsga.cs</DependentUpon>
     </Compile>
     <Compile Include="varosSearch.cs">
       <SubType>Form</SubType>
@@ -107,17 +167,41 @@
     <EmbeddedResource Include="addDiak.resx">
       <DependentUpon>addDiak.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addNyelvizsga.resx">
+      <DependentUpon>addNyelvizsga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSzak.resx">
+      <DependentUpon>addSzak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addVaros.resx">
+      <DependentUpon>addVaros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="diak.resx">
       <DependentUpon>diak.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="diakSearch.resx">
       <DependentUpon>diakSearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="editNyelvizsga.resx">
+      <DependentUpon>editNyelvizsga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editSzak.resx">
+      <DependentUpon>editSzak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editVaros.resx">
+      <DependentUpon>editVaros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="modify.resx">
+      <DependentUpon>modify.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="nyelvizsga.resx">
       <DependentUpon>nyelvizsga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nyelvizsgaSearch.resx">
+      <DependentUpon>nyelvizsgaSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +213,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="szakSeacrh.resx">
+      <DependentUpon>szakSeacrh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tarsitNyelvizsga.resx">
+      <DependentUpon>tarsitNyelvizsga.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="varosSearch.resx">
       <DependentUpon>varosSearch.cs</DependentUpon>
     </EmbeddedResource>

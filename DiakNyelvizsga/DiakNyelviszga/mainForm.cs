@@ -60,6 +60,31 @@ namespace DiakNyelviszga
             sv.Show();
         }
 
+        private void szakToolStripMenuItem_Click(object sender, EventArgs e) {
+            addSzak szak = new addSzak();
+            szak.Show();
+        }
+
+        private void nyelvizsgaToolStripMenuItem_Click(object sender, EventArgs e) {
+            addNyelvizsga ny = new addNyelvizsga();
+            ny.Show();
+        }
+
+        private void városToolStripMenuItem_Click(object sender, EventArgs e) {
+            addVaros v = new addVaros();
+            v.Show();
+        }
+
+        private void nyelvizsgaToolStripMenuItem1_Click(object sender, EventArgs e) {
+            nyelvizsgaSearch nyk = new nyelvizsgaSearch();
+            nyk.Show();
+        }
+
+        private void szakToolStripMenuItem1_Click(object sender, EventArgs e) {
+            szakSeacrh szk = new szakSeacrh();
+            szk.Show();
+        }
+
         
     }
 }

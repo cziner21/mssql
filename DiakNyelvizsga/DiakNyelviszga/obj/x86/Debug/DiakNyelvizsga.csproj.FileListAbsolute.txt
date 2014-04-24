@@ -15,3 +15,13 @@ d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga
 D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.varosSearch.resources
 D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.diakSearch.resources
 D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.csprojResolveAssemblyReference.cache
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.modify.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.addSzak.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.addNyelvizsga.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.addVaros.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.tarsitNyelvizsga.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.editNyelvizsga.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.editSzak.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.editVaros.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.nyelvizsgaSearch.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.szakSeacrh.resources

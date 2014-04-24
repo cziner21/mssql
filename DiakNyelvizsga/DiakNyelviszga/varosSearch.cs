@@ -27,11 +27,13 @@ namespace DiakNyelvizsga
         }
 
         private void searchBtn_Click(object sender, EventArgs e) {
+            dataGridView1.Update();
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["diakNyelvizsga"];
+            SqlConnection connection = new SqlConnection(settings.ConnectionString);
             try {
-                ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["diakNyelvizsga"];
-                SqlConnection connection = new SqlConnection(settings.ConnectionString);
+
                 SqlCommand command = connection.CreateCommand();
-                
+
                 string query = "Select * From isk_varos where";
                 query = query + " 1=1";
 
@@ -41,7 +43,7 @@ namespace DiakNyelvizsga
                     query = query + " AND id LIKE('" + idTbx.Text + "%') ";
                 }
                 if (nevCbx.Checked) {
-                    if(nevTbx.TextLength == 0) throw new Exception("Nem adta meg melyik városra keressünk!");
+                    if (nevTbx.TextLength == 0) throw new Exception("Nem adta meg melyik városra keressünk!");
                     query = query + " AND nev LIKE('" + nevTbx.Text + "%') ";
                 }
                 if (megyeCbx.Checked) {
@@ -64,7 +66,10 @@ namespace DiakNyelvizsga
 
             }
             catch (Exception ex) {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            finally {
+                connection.Close();
             }
             
         }
@@ -83,7 +88,7 @@ namespace DiakNyelvizsga
                 dataGridView1.DataMember = "isk_varos";
             }
             catch (Exception ex) {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             finally {
                 connection.Close();
@@ -111,6 +116,7 @@ namespace DiakNyelvizsga
             }
             else {
                 nevLbl.Hide();
+                nevTbx.Clear();
                 nevTbx.Hide();
                 
             }
@@ -124,6 +130,7 @@ namespace DiakNyelvizsga
             }
             else {
                 megyeLbl.Hide();
+                megyeTbx.Clear();
                 megyeTbx.Hide();
                 
             }
@@ -137,6 +144,7 @@ namespace DiakNyelvizsga
             }
             else {
                 orszagLbl.Hide();
+                orszagTbx.Clear();
                 orszagTbx.Hide();
                 
             }
@@ -165,7 +173,7 @@ namespace DiakNyelvizsga
 
                 }
                 catch (Exception ex) {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
 
