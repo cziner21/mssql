@@ -110,6 +110,9 @@
     <EmbeddedResource Include="diak.resx">
       <DependentUpon>diak.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="diakSearch.resx">
+      <DependentUpon>diakSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>

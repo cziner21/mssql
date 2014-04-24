@@ -13,3 +13,5 @@ d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\Sql beadandó.
 d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\Sql beadandó.pdb
 d:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelviszga.addDiak.resources
 D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.varosSearch.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.diakSearch.resources
+D:\Work\Programok\SQL\DiakNyelvizsga\DiakNyelviszga\obj\x86\Debug\DiakNyelvizsga.csprojResolveAssemblyReference.cache
