@@ -25,6 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(varosSearch));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -58,6 +59,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 16);
@@ -135,7 +137,7 @@
             // 
             this.idTbx.Location = new System.Drawing.Point(191, 49);
             this.idTbx.Name = "idTbx";
-            this.idTbx.Size = new System.Drawing.Size(100, 20);
+            this.idTbx.Size = new System.Drawing.Size(280, 20);
             this.idTbx.TabIndex = 3;
             this.idTbx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.idTbx_KeyPress);
             // 
@@ -143,7 +145,7 @@
             // 
             this.nevTbx.Location = new System.Drawing.Point(191, 75);
             this.nevTbx.Name = "nevTbx";
-            this.nevTbx.Size = new System.Drawing.Size(100, 20);
+            this.nevTbx.Size = new System.Drawing.Size(280, 20);
             this.nevTbx.TabIndex = 5;
             // 
             // nevLbl
@@ -159,7 +161,7 @@
             // 
             this.megyeTbx.Location = new System.Drawing.Point(191, 101);
             this.megyeTbx.Name = "megyeTbx";
-            this.megyeTbx.Size = new System.Drawing.Size(100, 20);
+            this.megyeTbx.Size = new System.Drawing.Size(280, 20);
             this.megyeTbx.TabIndex = 7;
             // 
             // megyeLbl
@@ -175,7 +177,7 @@
             // 
             this.orszagTbx.Location = new System.Drawing.Point(191, 127);
             this.orszagTbx.Name = "orszagTbx";
-            this.orszagTbx.Size = new System.Drawing.Size(100, 20);
+            this.orszagTbx.Size = new System.Drawing.Size(280, 20);
             this.orszagTbx.TabIndex = 9;
             // 
             // orszagLbl
@@ -189,11 +191,15 @@
             // 
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(313, 49);
+            this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.searchBtn.Image = global::DiakNyelvizsga.Properties.Resources.magnify;
+            this.searchBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.searchBtn.Location = new System.Drawing.Point(483, 91);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(100, 63);
             this.searchBtn.TabIndex = 10;
             this.searchBtn.Text = "Keres";
+            this.searchBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.searchBtn.UseVisualStyleBackColor = true;
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
@@ -201,6 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(595, 321);
             this.Controls.Add(this.searchBtn);
             this.Controls.Add(this.orszagTbx);
@@ -213,6 +220,8 @@
             this.Controls.Add(this.idLbl);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "varosSearch";
             this.Text = "Városok keresése";

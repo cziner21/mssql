@@ -32,6 +32,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>book.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -238,6 +245,32 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="book.ico" />
+    <Content Include="icons\accept.png" />
+    <Content Include="icons\add.png" />
+    <None Include="icons\arrow_refresh.png" />
+    <Content Include="icons\book_add.png" />
+    <Content Include="icons\book_delete.png" />
+    <Content Include="icons\book_edit.png" />
+    <Content Include="icons\cancel.png" />
+    <Content Include="icons\city.png" />
+    <None Include="icons\find.png" />
+    <Content Include="icons\group_add.png" />
+    <Content Include="icons\group_delete.png" />
+    <Content Include="icons\group_edit.png" />
+    <Content Include="icons\language.png" />
+    <None Include="icons\magnify.png" />
+    <Content Include="icons\map_add.png" />
+    <Content Include="icons\map_delete.png" />
+    <Content Include="icons\map_edit.png" />
+    <Content Include="icons\student.png" />
+    <None Include="icons\szak.png" />
+    <None Include="icons\student2.png" />
+    <Content Include="icons\user_add.png" />
+    <Content Include="icons\user_delete.png" />
+    <Content Include="icons\user_edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

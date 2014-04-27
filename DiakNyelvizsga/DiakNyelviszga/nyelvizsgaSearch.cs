@@ -15,6 +15,12 @@ namespace DiakNyelvizsga
     {
         public nyelvizsgaSearch() {
             InitializeComponent();
+
+            idTbx.Hide();
+            szintTbx.Hide();
+            tipusTbx.Hide();
+            nyelvTbx.Hide();
+            iskolaTbx.Hide();
         }
 
         private void searchBtn_Click(object sender, EventArgs e) {
@@ -86,6 +92,46 @@ namespace DiakNyelvizsga
             }
             finally {
                 connection.Close();
+            }
+        }
+
+        private void idCbx_CheckedChanged(object sender, EventArgs e) {
+            if (idCbx.Checked) idTbx.Show();
+            else {
+                idTbx.Clear();
+                idTbx.Hide();
+            }
+        }
+
+        private void szintCbx_CheckedChanged(object sender, EventArgs e) {
+            if (szintCbx.Checked) szintTbx.Show();
+            else {
+                szintTbx.Clear();
+                szintTbx.Hide();
+            }
+        }
+
+        private void tipusCbx_CheckedChanged(object sender, EventArgs e) {
+            if (tipusCbx.Checked) tipusTbx.Show();
+            else {
+                tipusTbx.Clear();
+                tipusTbx.Hide();
+            }
+        }
+
+        private void nyelvCbx_CheckedChanged(object sender, EventArgs e) {
+            if (nyelvCbx.Checked) nyelvTbx.Show();
+            else {
+                nyelvTbx.Clear();
+                nyelvTbx.Hide();
+            }
+        }
+
+        private void iskolaCbx_CheckedChanged(object sender, EventArgs e) {
+            if (iskolaCbx.Checked) iskolaTbx.Show();
+            else {
+                iskolaTbx.Clear();
+                iskolaTbx.Hide();
             }
         }
     }

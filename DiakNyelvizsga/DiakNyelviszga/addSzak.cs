@@ -15,6 +15,8 @@ namespace DiakNyelvizsga
     {
         public addSzak() {
             InitializeComponent();
+            this.BackColor = Color.MintCream;
+            this.MaximizeBox = false;
         }
 
         private void addSzakBtn_Click(object sender, EventArgs e) {

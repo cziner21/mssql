@@ -25,6 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editNyelvizsga));
             this.nyvIskolaTbx = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.nyvNyelvTbx = new System.Windows.Forms.TextBox();
@@ -128,6 +129,8 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.nyvSzintTbx);
             this.Controls.Add(this.nyvModifyBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "editNyelvizsga";
             this.Text = "Nyelvvizsga szerkesztése";
             this.Load += new System.EventHandler(this.editNyelvizsga_Load);

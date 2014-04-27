@@ -25,6 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editSzak));
             this.szakFelevTbx = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -86,6 +87,8 @@
             this.Controls.Add(this.label20);
             this.Controls.Add(this.szakNevTbx);
             this.Controls.Add(this.szakModifyBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "editSzak";
             this.Text = "Szak módosítása";
             this.Load += new System.EventHandler(this.editSzak_Load);

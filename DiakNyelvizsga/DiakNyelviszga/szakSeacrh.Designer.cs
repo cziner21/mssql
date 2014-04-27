@@ -25,6 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(szakSeacrh));
             this.searchBtn = new System.Windows.Forms.Button();
             this.felevTbx = new System.Windows.Forms.TextBox();
             this.felevLbl = new System.Windows.Forms.Label();
@@ -45,25 +46,29 @@
             // 
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(376, 32);
+            this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.searchBtn.Image = global::DiakNyelvizsga.Properties.Resources.magnify;
+            this.searchBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.searchBtn.Location = new System.Drawing.Point(380, 73);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(100, 63);
             this.searchBtn.TabIndex = 21;
             this.searchBtn.Text = "Keres";
+            this.searchBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.searchBtn.UseVisualStyleBackColor = true;
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
             // felevTbx
             // 
-            this.felevTbx.Location = new System.Drawing.Point(212, 84);
+            this.felevTbx.Location = new System.Drawing.Point(163, 85);
             this.felevTbx.Name = "felevTbx";
-            this.felevTbx.Size = new System.Drawing.Size(148, 20);
+            this.felevTbx.Size = new System.Drawing.Size(207, 20);
             this.felevTbx.TabIndex = 18;
             // 
             // felevLbl
             // 
             this.felevLbl.AutoSize = true;
-            this.felevLbl.Location = new System.Drawing.Point(150, 84);
+            this.felevLbl.Location = new System.Drawing.Point(101, 85);
             this.felevLbl.Name = "felevLbl";
             this.felevLbl.Size = new System.Drawing.Size(54, 13);
             this.felevLbl.TabIndex = 17;
@@ -71,15 +76,15 @@
             // 
             // nevTbx
             // 
-            this.nevTbx.Location = new System.Drawing.Point(212, 58);
+            this.nevTbx.Location = new System.Drawing.Point(163, 59);
             this.nevTbx.Name = "nevTbx";
-            this.nevTbx.Size = new System.Drawing.Size(148, 20);
+            this.nevTbx.Size = new System.Drawing.Size(207, 20);
             this.nevTbx.TabIndex = 16;
             // 
             // nevLbl
             // 
             this.nevLbl.AutoSize = true;
-            this.nevLbl.Location = new System.Drawing.Point(150, 58);
+            this.nevLbl.Location = new System.Drawing.Point(101, 59);
             this.nevLbl.Name = "nevLbl";
             this.nevLbl.Size = new System.Drawing.Size(29, 13);
             this.nevLbl.TabIndex = 15;
@@ -87,15 +92,15 @@
             // 
             // idTbx
             // 
-            this.idTbx.Location = new System.Drawing.Point(212, 32);
+            this.idTbx.Location = new System.Drawing.Point(163, 33);
             this.idTbx.Name = "idTbx";
-            this.idTbx.Size = new System.Drawing.Size(148, 20);
+            this.idTbx.Size = new System.Drawing.Size(207, 20);
             this.idTbx.TabIndex = 14;
             // 
             // idLbl
             // 
             this.idLbl.AutoSize = true;
-            this.idLbl.Location = new System.Drawing.Point(150, 32);
+            this.idLbl.Location = new System.Drawing.Point(101, 33);
             this.idLbl.Name = "idLbl";
             this.idLbl.Size = new System.Drawing.Size(18, 13);
             this.idLbl.TabIndex = 13;
@@ -122,6 +127,7 @@
             this.felevCbx.TabIndex = 2;
             this.felevCbx.Text = "FÉLÉVEK";
             this.felevCbx.UseVisualStyleBackColor = true;
+            this.felevCbx.CheckedChanged += new System.EventHandler(this.felevCbx_CheckedChanged);
             // 
             // nevCbx
             // 
@@ -132,6 +138,7 @@
             this.nevCbx.TabIndex = 1;
             this.nevCbx.Text = "NÉV";
             this.nevCbx.UseVisualStyleBackColor = true;
+            this.nevCbx.CheckedChanged += new System.EventHandler(this.nevCbx_CheckedChanged);
             // 
             // idCbx
             // 
@@ -142,6 +149,7 @@
             this.idCbx.TabIndex = 0;
             this.idCbx.Text = "ID";
             this.idCbx.UseVisualStyleBackColor = true;
+            this.idCbx.CheckedChanged += new System.EventHandler(this.idCbx_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -155,6 +163,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 16);
@@ -176,6 +185,8 @@
             this.Controls.Add(this.idLbl);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "szakSeacrh";
             this.Text = "Szak keresése";
             this.Load += new System.EventHandler(this.szakSeacrh_Load);

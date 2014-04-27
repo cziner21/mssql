@@ -16,6 +16,8 @@ namespace DiakNyelvizsga
         int id;
         public editSzak(string id) {
             InitializeComponent();
+            this.BackColor = Color.MintCream;
+            this.MaximizeBox = false;
             this.id = int.Parse(id);
         }
 

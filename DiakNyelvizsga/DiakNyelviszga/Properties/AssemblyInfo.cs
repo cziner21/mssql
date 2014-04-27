@@ -7,10 +7,10 @@ using System.Resources;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Sql beadandó")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Diák-nyelvvizsga kezelő program")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("EKF")]
-[assembly: AssemblyProduct("DiakNyelvizsga")]
+[assembly: AssemblyCompany("EKF - Cziner Ádám")]
+[assembly: AssemblyProduct("Diák - nyelvvizsga")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("Cziner Ádám")]
 [assembly: AssemblyCulture("")]

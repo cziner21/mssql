@@ -15,6 +15,8 @@ namespace DiakNyelvizsga
     {
         public addVaros() {
             InitializeComponent();
+            this.BackColor = Color.MintCream;
+            this.MaximizeBox = false;
         }
 
         private void addVarosBtn_Click(object sender, EventArgs e) {

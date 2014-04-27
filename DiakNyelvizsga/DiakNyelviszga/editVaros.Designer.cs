@@ -25,6 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(editVaros));
             this.varosOrszagTbx = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.varosMegyeTbx = new System.Windows.Forms.TextBox();
@@ -128,6 +129,8 @@
             this.Controls.Add(this.label27);
             this.Controls.Add(this.varosNevTbx);
             this.Controls.Add(this.varosModifyBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "editVaros";
             this.Text = "Város szerkesztése";
             this.Load += new System.EventHandler(this.editVaros_Load);

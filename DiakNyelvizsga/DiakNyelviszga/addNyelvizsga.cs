@@ -15,6 +15,9 @@ namespace DiakNyelvizsga
     {
         public addNyelvizsga() {
             InitializeComponent();
+            this.BackColor = Color.MintCream;
+            this.MaximizeBox = false;
+            
         }
 
         private void addNyelvizsgaBtn_Click(object sender, EventArgs e) {

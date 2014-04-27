@@ -18,7 +18,8 @@ namespace DiakNyelviszga
 
         public nyelvizsga() {
             InitializeComponent();
-            
+            this.BackColor = Color.MintCream;
+            this.MaximizeBox = false;
         }
 
         private void refreshBtn_Click(object sender, EventArgs e) {
@@ -101,6 +102,11 @@ namespace DiakNyelviszga
             finally {
                 connection.Close();
             }
+        }
+
+        private void addBtn_Click(object sender, EventArgs e) {
+            addNyelvizsga any = new addNyelvizsga();
+            any.Show();
         }
     }
 }

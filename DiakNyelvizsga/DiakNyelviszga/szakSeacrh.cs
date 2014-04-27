@@ -15,6 +15,12 @@ namespace DiakNyelvizsga
     {
         public szakSeacrh() {
             InitializeComponent();
+            this.BackColor = Color.MintCream;
+            this.MaximizeBox = false;
+
+            idTbx.Hide();
+            nevTbx.Hide();
+            felevTbx.Hide();
         }
 
         private void searchBtn_Click(object sender, EventArgs e) {
@@ -78,6 +84,30 @@ namespace DiakNyelvizsga
             }
             finally {
                 connection.Close();
+            }
+        }
+
+        private void idCbx_CheckedChanged(object sender, EventArgs e) {
+            if (idCbx.Checked) idTbx.Show();
+            else {
+                idTbx.Clear();
+                idTbx.Hide();
+            }
+        }
+
+        private void nevCbx_CheckedChanged(object sender, EventArgs e) {
+            if (nevCbx.Checked) nevTbx.Show();
+            else {
+                nevTbx.Clear();
+                nevTbx.Hide();
+            }
+        }
+
+        private void felevCbx_CheckedChanged(object sender, EventArgs e) {
+            if (felevCbx.Checked) felevTbx.Show();
+            else {
+                felevTbx.Clear();
+                felevTbx.Hide();
             }
         }
     }

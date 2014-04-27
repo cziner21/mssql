@@ -25,7 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.searchBtn = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nyelvizsgaSearch));
             this.nyelvTbx = new System.Windows.Forms.TextBox();
             this.nyelvLbl = new System.Windows.Forms.Label();
             this.tipusTbx = new System.Windows.Forms.TextBox();
@@ -35,35 +35,26 @@
             this.idTbx = new System.Windows.Forms.TextBox();
             this.idLbl = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.iskolaCbx = new System.Windows.Forms.CheckBox();
             this.nyelvCbx = new System.Windows.Forms.CheckBox();
             this.tipusCbx = new System.Windows.Forms.CheckBox();
             this.szintCbx = new System.Windows.Forms.CheckBox();
             this.idCbx = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.iskolaCbx = new System.Windows.Forms.CheckBox();
             this.iskolaTbx = new System.Windows.Forms.TextBox();
             this.iskolaLbl = new System.Windows.Forms.Label();
+            this.searchBtn = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // searchBtn
-            // 
-            this.searchBtn.Location = new System.Drawing.Point(310, 31);
-            this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(100, 63);
-            this.searchBtn.TabIndex = 21;
-            this.searchBtn.Text = "Keres";
-            this.searchBtn.UseVisualStyleBackColor = true;
-            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
-            // 
             // nyelvTbx
             // 
             this.nyelvTbx.Location = new System.Drawing.Point(188, 109);
             this.nyelvTbx.Name = "nyelvTbx";
-            this.nyelvTbx.Size = new System.Drawing.Size(100, 20);
+            this.nyelvTbx.Size = new System.Drawing.Size(281, 20);
             this.nyelvTbx.TabIndex = 20;
             // 
             // nyelvLbl
@@ -79,7 +70,7 @@
             // 
             this.tipusTbx.Location = new System.Drawing.Point(188, 83);
             this.tipusTbx.Name = "tipusTbx";
-            this.tipusTbx.Size = new System.Drawing.Size(100, 20);
+            this.tipusTbx.Size = new System.Drawing.Size(281, 20);
             this.tipusTbx.TabIndex = 18;
             // 
             // tipusLbl
@@ -95,7 +86,7 @@
             // 
             this.szintTbx.Location = new System.Drawing.Point(188, 57);
             this.szintTbx.Name = "szintTbx";
-            this.szintTbx.Size = new System.Drawing.Size(100, 20);
+            this.szintTbx.Size = new System.Drawing.Size(281, 20);
             this.szintTbx.TabIndex = 16;
             // 
             // szintLbl
@@ -111,7 +102,7 @@
             // 
             this.idTbx.Location = new System.Drawing.Point(188, 31);
             this.idTbx.Name = "idTbx";
-            this.idTbx.Size = new System.Drawing.Size(100, 20);
+            this.idTbx.Size = new System.Drawing.Size(281, 20);
             this.idTbx.TabIndex = 14;
             // 
             // idLbl
@@ -137,6 +128,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Szűrés";
             // 
+            // iskolaCbx
+            // 
+            this.iskolaCbx.AutoSize = true;
+            this.iskolaCbx.Location = new System.Drawing.Point(7, 112);
+            this.iskolaCbx.Name = "iskolaCbx";
+            this.iskolaCbx.Size = new System.Drawing.Size(64, 17);
+            this.iskolaCbx.TabIndex = 4;
+            this.iskolaCbx.Text = "ISKOLA";
+            this.iskolaCbx.UseVisualStyleBackColor = true;
+            this.iskolaCbx.CheckedChanged += new System.EventHandler(this.iskolaCbx_CheckedChanged);
+            // 
             // nyelvCbx
             // 
             this.nyelvCbx.AutoSize = true;
@@ -146,6 +148,7 @@
             this.nyelvCbx.TabIndex = 3;
             this.nyelvCbx.Text = "NYELV";
             this.nyelvCbx.UseVisualStyleBackColor = true;
+            this.nyelvCbx.CheckedChanged += new System.EventHandler(this.nyelvCbx_CheckedChanged);
             // 
             // tipusCbx
             // 
@@ -156,6 +159,7 @@
             this.tipusCbx.TabIndex = 2;
             this.tipusCbx.Text = "TÍPUS";
             this.tipusCbx.UseVisualStyleBackColor = true;
+            this.tipusCbx.CheckedChanged += new System.EventHandler(this.tipusCbx_CheckedChanged);
             // 
             // szintCbx
             // 
@@ -166,6 +170,7 @@
             this.szintCbx.TabIndex = 1;
             this.szintCbx.Text = "SZINT";
             this.szintCbx.UseVisualStyleBackColor = true;
+            this.szintCbx.CheckedChanged += new System.EventHandler(this.szintCbx_CheckedChanged);
             // 
             // idCbx
             // 
@@ -176,6 +181,7 @@
             this.idCbx.TabIndex = 0;
             this.idCbx.Text = "ID";
             this.idCbx.UseVisualStyleBackColor = true;
+            this.idCbx.CheckedChanged += new System.EventHandler(this.idCbx_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -189,6 +195,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 16);
@@ -196,21 +203,11 @@
             this.dataGridView1.Size = new System.Drawing.Size(565, 140);
             this.dataGridView1.TabIndex = 0;
             // 
-            // iskolaCbx
-            // 
-            this.iskolaCbx.AutoSize = true;
-            this.iskolaCbx.Location = new System.Drawing.Point(7, 112);
-            this.iskolaCbx.Name = "iskolaCbx";
-            this.iskolaCbx.Size = new System.Drawing.Size(64, 17);
-            this.iskolaCbx.TabIndex = 4;
-            this.iskolaCbx.Text = "ISKOLA";
-            this.iskolaCbx.UseVisualStyleBackColor = true;
-            // 
             // iskolaTbx
             // 
             this.iskolaTbx.Location = new System.Drawing.Point(188, 136);
             this.iskolaTbx.Name = "iskolaTbx";
-            this.iskolaTbx.Size = new System.Drawing.Size(100, 20);
+            this.iskolaTbx.Size = new System.Drawing.Size(281, 20);
             this.iskolaTbx.TabIndex = 23;
             // 
             // iskolaLbl
@@ -222,10 +219,26 @@
             this.iskolaLbl.TabIndex = 22;
             this.iskolaLbl.Text = "ISKOLA";
             // 
+            // searchBtn
+            // 
+            this.searchBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.searchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.searchBtn.Image = global::DiakNyelvizsga.Properties.Resources.magnify;
+            this.searchBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.searchBtn.Location = new System.Drawing.Point(480, 106);
+            this.searchBtn.Name = "searchBtn";
+            this.searchBtn.Size = new System.Drawing.Size(100, 63);
+            this.searchBtn.TabIndex = 21;
+            this.searchBtn.Text = "Keres";
+            this.searchBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.searchBtn.UseVisualStyleBackColor = true;
+            this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
+            // 
             // nyelvizsgaSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(629, 339);
             this.Controls.Add(this.iskolaTbx);
             this.Controls.Add(this.iskolaLbl);
@@ -240,6 +253,9 @@
             this.Controls.Add(this.idLbl);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "nyelvizsgaSearch";
             this.Text = "Nyelvizsga keresése";
             this.Load += new System.EventHandler(this.nyelvizsgaSearch_Load);

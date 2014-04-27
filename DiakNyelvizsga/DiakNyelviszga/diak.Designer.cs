@@ -25,15 +25,17 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(diak));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.updateBtn = new System.Windows.Forms.Button();
-            this.refreshBtn = new System.Windows.Forms.Button();
-            this.delBtn = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.delBtn = new System.Windows.Forms.Button();
+            this.refreshBtn = new System.Windows.Forms.Button();
+            this.updateBtn = new System.Windows.Forms.Button();
+            this.addBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -41,6 +43,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 19);
             this.dataGridView1.Name = "dataGridView1";
@@ -50,6 +53,7 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(12, 290);
             this.dataGridView2.Name = "dataGridView2";
@@ -65,38 +69,9 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Nyelvvizsga:";
             // 
-            // updateBtn
-            // 
-            this.updateBtn.Location = new System.Drawing.Point(795, 19);
-            this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(75, 23);
-            this.updateBtn.TabIndex = 3;
-            this.updateBtn.Text = "Módosít";
-            this.updateBtn.UseVisualStyleBackColor = true;
-            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
-            // 
-            // refreshBtn
-            // 
-            this.refreshBtn.Location = new System.Drawing.Point(795, 75);
-            this.refreshBtn.Name = "refreshBtn";
-            this.refreshBtn.Size = new System.Drawing.Size(75, 23);
-            this.refreshBtn.TabIndex = 4;
-            this.refreshBtn.Text = "Frissít";
-            this.refreshBtn.UseVisualStyleBackColor = true;
-            this.refreshBtn.Click += new System.EventHandler(this.refreshBtn_Click);
-            // 
-            // delBtn
-            // 
-            this.delBtn.Location = new System.Drawing.Point(795, 48);
-            this.delBtn.Name = "delBtn";
-            this.delBtn.Size = new System.Drawing.Size(75, 23);
-            this.delBtn.TabIndex = 5;
-            this.delBtn.Text = "Töröl";
-            this.delBtn.UseVisualStyleBackColor = true;
-            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
-            // 
             // dataGridView3
             // 
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Location = new System.Drawing.Point(484, 290);
             this.dataGridView3.Name = "dataGridView3";
@@ -121,11 +96,64 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Diák:";
             // 
+            // delBtn
+            // 
+            this.delBtn.Image = global::DiakNyelvizsga.Properties.Resources.user_delete;
+            this.delBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.delBtn.Location = new System.Drawing.Point(795, 48);
+            this.delBtn.Name = "delBtn";
+            this.delBtn.Size = new System.Drawing.Size(75, 23);
+            this.delBtn.TabIndex = 5;
+            this.delBtn.Text = "Töröl";
+            this.delBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.delBtn.UseVisualStyleBackColor = true;
+            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
+            // 
+            // refreshBtn
+            // 
+            this.refreshBtn.Image = global::DiakNyelvizsga.Properties.Resources.arrow_refresh;
+            this.refreshBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.refreshBtn.Location = new System.Drawing.Point(795, 75);
+            this.refreshBtn.Name = "refreshBtn";
+            this.refreshBtn.Size = new System.Drawing.Size(75, 23);
+            this.refreshBtn.TabIndex = 4;
+            this.refreshBtn.Text = "Frissít";
+            this.refreshBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.refreshBtn.UseVisualStyleBackColor = true;
+            this.refreshBtn.Click += new System.EventHandler(this.refreshBtn_Click);
+            // 
+            // updateBtn
+            // 
+            this.updateBtn.Image = global::DiakNyelvizsga.Properties.Resources.user_edit;
+            this.updateBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.updateBtn.Location = new System.Drawing.Point(795, 19);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(75, 23);
+            this.updateBtn.TabIndex = 3;
+            this.updateBtn.Text = "Módosít";
+            this.updateBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.updateBtn.UseVisualStyleBackColor = true;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
+            // 
+            // addBtn
+            // 
+            this.addBtn.Image = global::DiakNyelvizsga.Properties.Resources.add;
+            this.addBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addBtn.Location = new System.Drawing.Point(795, 103);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(75, 23);
+            this.addBtn.TabIndex = 9;
+            this.addBtn.Text = "Hozzáad";
+            this.addBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            // 
             // diak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 434);
+            this.Controls.Add(this.addBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView3);
@@ -135,6 +163,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "diak";
             this.Text = "Diákok";
             this.Load += new System.EventHandler(this.diak_Load);
@@ -157,5 +187,6 @@
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button addBtn;
     }
 }

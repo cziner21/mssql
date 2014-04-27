@@ -15,11 +15,11 @@ namespace DiakNyelvizsga
     {
         public varosSearch() {
             InitializeComponent();
-            searchBtn.Hide();
-            idLbl.Hide();
-            nevLbl.Hide();
-            megyeLbl.Hide();
-            orszagLbl.Hide();
+            //searchBtn.Hide();
+            //idLbl.Hide();
+            //nevLbl.Hide();
+            //megyeLbl.Hide();
+            //orszagLbl.Hide();
             idTbx.Hide();
             nevTbx.Hide();
             megyeTbx.Hide();
@@ -97,12 +97,12 @@ namespace DiakNyelvizsga
 
         private void idCbx_CheckedChanged(object sender, EventArgs e) {
             if (idCbx.Checked) {
-                idLbl.Show();
+                
                 idTbx.Show();
-                searchBtn.Show();
+                
             }
             else {
-                idLbl.Hide();
+                idTbx.Clear();
                 idTbx.Hide();
                 
             }
@@ -110,12 +110,12 @@ namespace DiakNyelvizsga
 
         private void nevCbx_CheckedChanged(object sender, EventArgs e) {
             if (nevCbx.Checked) {
-                nevLbl.Show();
+                
                 nevTbx.Show();
-                searchBtn.Show();
+               
             }
             else {
-                nevLbl.Hide();
+                
                 nevTbx.Clear();
                 nevTbx.Hide();
                 
@@ -124,12 +124,12 @@ namespace DiakNyelvizsga
 
         private void megyeCbx_CheckedChanged(object sender, EventArgs e) {
             if (megyeCbx.Checked) {
-                megyeLbl.Show();
+                
                 megyeTbx.Show();
-                searchBtn.Show();
+                
             }
             else {
-                megyeLbl.Hide();
+                
                 megyeTbx.Clear();
                 megyeTbx.Hide();
                 
@@ -138,12 +138,12 @@ namespace DiakNyelvizsga
 
         private void orszagCbx_CheckedChanged(object sender, EventArgs e) {
             if (orszagCbx.Checked) {
-                orszagLbl.Show();
+                
                 orszagTbx.Show();
-                searchBtn.Show();
+                
             }
             else {
-                orszagLbl.Hide();
+               
                 orszagTbx.Clear();
                 orszagTbx.Hide();
                 

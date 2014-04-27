@@ -25,6 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addSzak));
             this.addSzakBtn = new System.Windows.Forms.Button();
             this.felevekTbx = new System.Windows.Forms.TextBox();
             this.szakNevTbx = new System.Windows.Forms.TextBox();
@@ -84,6 +85,8 @@
             this.Controls.Add(this.szakNevTbx);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "addSzak";
             this.Text = "Szak hozzáadása";
             this.ResumeLayout(false);

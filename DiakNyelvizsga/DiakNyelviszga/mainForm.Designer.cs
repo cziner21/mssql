@@ -25,29 +25,30 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infóToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.szakPbx = new System.Windows.Forms.PictureBox();
+            this.nyelvizsgaPbx = new System.Windows.Forms.PictureBox();
+            this.varosPbx = new System.Windows.Forms.PictureBox();
+            this.diakPbx = new System.Windows.Forms.PictureBox();
             this.újToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diákToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.városToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nyelvizsgaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.szakToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infóToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.keresésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diákToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.városToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nyelvizsgaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.szakToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.szakPbx = new System.Windows.Forms.PictureBox();
-            this.nyelvizsgaPbx = new System.Windows.Forms.PictureBox();
-            this.varosPbx = new System.Windows.Forms.PictureBox();
-            this.diakPbx = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.szakPbx)).BeginInit();
@@ -58,6 +59,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Aqua;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.infóToolStripMenuItem,
@@ -77,52 +79,6 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // újToolStripMenuItem
-            // 
-            this.újToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.diákToolStripMenuItem,
-            this.városToolStripMenuItem,
-            this.nyelvizsgaToolStripMenuItem,
-            this.szakToolStripMenuItem});
-            this.újToolStripMenuItem.Name = "újToolStripMenuItem";
-            this.újToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.újToolStripMenuItem.Text = "Új";
-            // 
-            // diákToolStripMenuItem
-            // 
-            this.diákToolStripMenuItem.Name = "diákToolStripMenuItem";
-            this.diákToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.diákToolStripMenuItem.Text = "Diák...";
-            this.diákToolStripMenuItem.Click += new System.EventHandler(this.diákToolStripMenuItem_Click);
-            // 
-            // városToolStripMenuItem
-            // 
-            this.városToolStripMenuItem.Name = "városToolStripMenuItem";
-            this.városToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.városToolStripMenuItem.Text = "Város...";
-            this.városToolStripMenuItem.Click += new System.EventHandler(this.városToolStripMenuItem_Click);
-            // 
-            // nyelvizsgaToolStripMenuItem
-            // 
-            this.nyelvizsgaToolStripMenuItem.Name = "nyelvizsgaToolStripMenuItem";
-            this.nyelvizsgaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.nyelvizsgaToolStripMenuItem.Text = "Nyelvizsga...";
-            this.nyelvizsgaToolStripMenuItem.Click += new System.EventHandler(this.nyelvizsgaToolStripMenuItem_Click);
-            // 
-            // szakToolStripMenuItem
-            // 
-            this.szakToolStripMenuItem.Name = "szakToolStripMenuItem";
-            this.szakToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.szakToolStripMenuItem.Text = "Szak...";
-            this.szakToolStripMenuItem.Click += new System.EventHandler(this.szakToolStripMenuItem_Click);
-            // 
-            // kilépésToolStripMenuItem
-            // 
-            this.kilépésToolStripMenuItem.Name = "kilépésToolStripMenuItem";
-            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.kilépésToolStripMenuItem.Text = "Kilépés";
-            this.kilépésToolStripMenuItem.Click += new System.EventHandler(this.kilépésToolStripMenuItem_Click);
-            // 
             // infóToolStripMenuItem
             // 
             this.infóToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -131,48 +87,9 @@
             this.infóToolStripMenuItem.Text = "Infó";
             this.infóToolStripMenuItem.Click += new System.EventHandler(this.infóToolStripMenuItem_Click);
             // 
-            // keresésToolStripMenuItem
-            // 
-            this.keresésToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.diákToolStripMenuItem1,
-            this.városToolStripMenuItem1,
-            this.nyelvizsgaToolStripMenuItem1,
-            this.szakToolStripMenuItem1});
-            this.keresésToolStripMenuItem.Name = "keresésToolStripMenuItem";
-            this.keresésToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.keresésToolStripMenuItem.Text = "Keresés";
-            // 
-            // diákToolStripMenuItem1
-            // 
-            this.diákToolStripMenuItem1.Name = "diákToolStripMenuItem1";
-            this.diákToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.diákToolStripMenuItem1.Text = "Diák";
-            this.diákToolStripMenuItem1.Click += new System.EventHandler(this.diákToolStripMenuItem1_Click);
-            // 
-            // városToolStripMenuItem1
-            // 
-            this.városToolStripMenuItem1.Name = "városToolStripMenuItem1";
-            this.városToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.városToolStripMenuItem1.Text = "Város";
-            this.városToolStripMenuItem1.Click += new System.EventHandler(this.városToolStripMenuItem1_Click);
-            // 
-            // nyelvizsgaToolStripMenuItem1
-            // 
-            this.nyelvizsgaToolStripMenuItem1.Name = "nyelvizsgaToolStripMenuItem1";
-            this.nyelvizsgaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.nyelvizsgaToolStripMenuItem1.Text = "Nyelvizsga";
-            this.nyelvizsgaToolStripMenuItem1.Click += new System.EventHandler(this.nyelvizsgaToolStripMenuItem1_Click);
-            // 
-            // szakToolStripMenuItem1
-            // 
-            this.szakToolStripMenuItem1.Name = "szakToolStripMenuItem1";
-            this.szakToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.szakToolStripMenuItem1.Text = "Szak";
-            this.szakToolStripMenuItem1.Click += new System.EventHandler(this.szakToolStripMenuItem1_Click);
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.MintCream;
             this.panel1.Controls.Add(this.szakPbx);
             this.panel1.Controls.Add(this.nyelvizsgaPbx);
             this.panel1.Controls.Add(this.varosPbx);
@@ -186,42 +103,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(264, 213);
             this.panel1.TabIndex = 1;
-            // 
-            // szakPbx
-            // 
-            this.szakPbx.Location = new System.Drawing.Point(166, 114);
-            this.szakPbx.Name = "szakPbx";
-            this.szakPbx.Size = new System.Drawing.Size(60, 60);
-            this.szakPbx.TabIndex = 11;
-            this.szakPbx.TabStop = false;
-            this.szakPbx.Click += new System.EventHandler(this.szakPbx_Click);
-            // 
-            // nyelvizsgaPbx
-            // 
-            this.nyelvizsgaPbx.Location = new System.Drawing.Point(38, 114);
-            this.nyelvizsgaPbx.Name = "nyelvizsgaPbx";
-            this.nyelvizsgaPbx.Size = new System.Drawing.Size(60, 60);
-            this.nyelvizsgaPbx.TabIndex = 10;
-            this.nyelvizsgaPbx.TabStop = false;
-            this.nyelvizsgaPbx.Click += new System.EventHandler(this.nyelvizsgaPbx_Click);
-            // 
-            // varosPbx
-            // 
-            this.varosPbx.Location = new System.Drawing.Point(166, 20);
-            this.varosPbx.Name = "varosPbx";
-            this.varosPbx.Size = new System.Drawing.Size(60, 60);
-            this.varosPbx.TabIndex = 9;
-            this.varosPbx.TabStop = false;
-            this.varosPbx.Click += new System.EventHandler(this.varosPbx_Click);
-            // 
-            // diakPbx
-            // 
-            this.diakPbx.Location = new System.Drawing.Point(38, 20);
-            this.diakPbx.Name = "diakPbx";
-            this.diakPbx.Size = new System.Drawing.Size(60, 60);
-            this.diakPbx.TabIndex = 8;
-            this.diakPbx.TabStop = false;
-            this.diakPbx.Click += new System.EventHandler(this.diakPbx_Click);
             // 
             // label3
             // 
@@ -259,6 +140,146 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Diákok";
             // 
+            // szakPbx
+            // 
+            this.szakPbx.BackgroundImage = global::DiakNyelvizsga.Properties.Resources.szak;
+            this.szakPbx.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.szakPbx.Location = new System.Drawing.Point(166, 114);
+            this.szakPbx.Name = "szakPbx";
+            this.szakPbx.Size = new System.Drawing.Size(60, 60);
+            this.szakPbx.TabIndex = 11;
+            this.szakPbx.TabStop = false;
+            this.szakPbx.Click += new System.EventHandler(this.szakPbx_Click);
+            // 
+            // nyelvizsgaPbx
+            // 
+            this.nyelvizsgaPbx.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.nyelvizsgaPbx.Image = global::DiakNyelvizsga.Properties.Resources.language;
+            this.nyelvizsgaPbx.Location = new System.Drawing.Point(38, 114);
+            this.nyelvizsgaPbx.Name = "nyelvizsgaPbx";
+            this.nyelvizsgaPbx.Size = new System.Drawing.Size(60, 60);
+            this.nyelvizsgaPbx.TabIndex = 10;
+            this.nyelvizsgaPbx.TabStop = false;
+            this.nyelvizsgaPbx.Click += new System.EventHandler(this.nyelvizsgaPbx_Click);
+            // 
+            // varosPbx
+            // 
+            this.varosPbx.BackgroundImage = global::DiakNyelvizsga.Properties.Resources.city1;
+            this.varosPbx.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.varosPbx.Location = new System.Drawing.Point(166, 20);
+            this.varosPbx.Name = "varosPbx";
+            this.varosPbx.Size = new System.Drawing.Size(60, 60);
+            this.varosPbx.TabIndex = 9;
+            this.varosPbx.TabStop = false;
+            this.varosPbx.Click += new System.EventHandler(this.varosPbx_Click);
+            // 
+            // diakPbx
+            // 
+            this.diakPbx.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.diakPbx.Image = global::DiakNyelvizsga.Properties.Resources.student21;
+            this.diakPbx.Location = new System.Drawing.Point(38, 20);
+            this.diakPbx.Name = "diakPbx";
+            this.diakPbx.Size = new System.Drawing.Size(60, 60);
+            this.diakPbx.TabIndex = 8;
+            this.diakPbx.TabStop = false;
+            this.diakPbx.Click += new System.EventHandler(this.diakPbx_Click);
+            // 
+            // újToolStripMenuItem
+            // 
+            this.újToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.diákToolStripMenuItem,
+            this.városToolStripMenuItem,
+            this.nyelvizsgaToolStripMenuItem,
+            this.szakToolStripMenuItem});
+            this.újToolStripMenuItem.Image = global::DiakNyelvizsga.Properties.Resources.add;
+            this.újToolStripMenuItem.Name = "újToolStripMenuItem";
+            this.újToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.újToolStripMenuItem.Text = "Új";
+            // 
+            // diákToolStripMenuItem
+            // 
+            this.diákToolStripMenuItem.Image = global::DiakNyelvizsga.Properties.Resources.user_add;
+            this.diákToolStripMenuItem.Name = "diákToolStripMenuItem";
+            this.diákToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.diákToolStripMenuItem.Text = "Diák...";
+            this.diákToolStripMenuItem.Click += new System.EventHandler(this.diákToolStripMenuItem_Click);
+            // 
+            // városToolStripMenuItem
+            // 
+            this.városToolStripMenuItem.Image = global::DiakNyelvizsga.Properties.Resources.map_add;
+            this.városToolStripMenuItem.Name = "városToolStripMenuItem";
+            this.városToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.városToolStripMenuItem.Text = "Város...";
+            this.városToolStripMenuItem.Click += new System.EventHandler(this.városToolStripMenuItem_Click);
+            // 
+            // nyelvizsgaToolStripMenuItem
+            // 
+            this.nyelvizsgaToolStripMenuItem.Image = global::DiakNyelvizsga.Properties.Resources.book_add;
+            this.nyelvizsgaToolStripMenuItem.Name = "nyelvizsgaToolStripMenuItem";
+            this.nyelvizsgaToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.nyelvizsgaToolStripMenuItem.Text = "Nyelvizsga...";
+            this.nyelvizsgaToolStripMenuItem.Click += new System.EventHandler(this.nyelvizsgaToolStripMenuItem_Click);
+            // 
+            // szakToolStripMenuItem
+            // 
+            this.szakToolStripMenuItem.Image = global::DiakNyelvizsga.Properties.Resources.group_add;
+            this.szakToolStripMenuItem.Name = "szakToolStripMenuItem";
+            this.szakToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.szakToolStripMenuItem.Text = "Szak...";
+            this.szakToolStripMenuItem.Click += new System.EventHandler(this.szakToolStripMenuItem_Click);
+            // 
+            // kilépésToolStripMenuItem
+            // 
+            this.kilépésToolStripMenuItem.Image = global::DiakNyelvizsga.Properties.Resources.cancel;
+            this.kilépésToolStripMenuItem.Name = "kilépésToolStripMenuItem";
+            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.kilépésToolStripMenuItem.Text = "Kilépés";
+            this.kilépésToolStripMenuItem.Click += new System.EventHandler(this.kilépésToolStripMenuItem_Click);
+            // 
+            // keresésToolStripMenuItem
+            // 
+            this.keresésToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.diákToolStripMenuItem1,
+            this.városToolStripMenuItem1,
+            this.nyelvizsgaToolStripMenuItem1,
+            this.szakToolStripMenuItem1});
+            this.keresésToolStripMenuItem.Image = global::DiakNyelvizsga.Properties.Resources.find;
+            this.keresésToolStripMenuItem.Name = "keresésToolStripMenuItem";
+            this.keresésToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.keresésToolStripMenuItem.Text = "Keresés";
+            // 
+            // diákToolStripMenuItem1
+            // 
+            this.diákToolStripMenuItem1.Image = global::DiakNyelvizsga.Properties.Resources.find;
+            this.diákToolStripMenuItem1.Name = "diákToolStripMenuItem1";
+            this.diákToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.diákToolStripMenuItem1.Text = "Diák";
+            this.diákToolStripMenuItem1.Click += new System.EventHandler(this.diákToolStripMenuItem1_Click);
+            // 
+            // városToolStripMenuItem1
+            // 
+            this.városToolStripMenuItem1.Image = global::DiakNyelvizsga.Properties.Resources.find;
+            this.városToolStripMenuItem1.Name = "városToolStripMenuItem1";
+            this.városToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.városToolStripMenuItem1.Text = "Város";
+            this.városToolStripMenuItem1.Click += new System.EventHandler(this.városToolStripMenuItem1_Click);
+            // 
+            // nyelvizsgaToolStripMenuItem1
+            // 
+            this.nyelvizsgaToolStripMenuItem1.Image = global::DiakNyelvizsga.Properties.Resources.find;
+            this.nyelvizsgaToolStripMenuItem1.Name = "nyelvizsgaToolStripMenuItem1";
+            this.nyelvizsgaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.nyelvizsgaToolStripMenuItem1.Text = "Nyelvizsga";
+            this.nyelvizsgaToolStripMenuItem1.Click += new System.EventHandler(this.nyelvizsgaToolStripMenuItem1_Click);
+            // 
+            // szakToolStripMenuItem1
+            // 
+            this.szakToolStripMenuItem1.Image = global::DiakNyelvizsga.Properties.Resources.find;
+            this.szakToolStripMenuItem1.Name = "szakToolStripMenuItem1";
+            this.szakToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.szakToolStripMenuItem1.Text = "Szak";
+            this.szakToolStripMenuItem1.Click += new System.EventHandler(this.szakToolStripMenuItem1_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,9 +287,11 @@
             this.ClientSize = new System.Drawing.Size(264, 237);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "mainForm";
-            this.Text = "Főablak";
+            this.Text = "Diák-Nyelvvizsga";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);

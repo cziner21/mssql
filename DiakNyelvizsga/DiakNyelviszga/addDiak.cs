@@ -16,6 +16,8 @@ namespace DiakNyelviszga
     {
         public addDiak() {
             InitializeComponent();
+            this.BackColor = Color.MintCream;
+            this.MaximizeBox = false;
             ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["diakNyelvizsga"];
             SqlConnection connection = new SqlConnection(settings.ConnectionString);
             SqlCommand command = connection.CreateCommand();

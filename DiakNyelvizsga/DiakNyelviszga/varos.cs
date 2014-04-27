@@ -17,7 +17,8 @@ namespace DiakNyelviszga
         public string id;
         public varos() {
             InitializeComponent();
-           
+            this.BackColor = Color.MintCream;
+            this.MaximizeBox = false;
         }
 
         private void refreshBtn_Click(object sender, EventArgs e) {
@@ -100,6 +101,11 @@ namespace DiakNyelviszga
             finally {
                 connection.Close();
             }
+        }
+
+        private void addBtn_Click(object sender, EventArgs e) {
+            addVaros av = new addVaros();
+            av.Show();
         }
     }
 }

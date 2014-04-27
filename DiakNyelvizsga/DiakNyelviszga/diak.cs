@@ -18,7 +18,8 @@ namespace DiakNyelviszga
 
         public diak() {
             InitializeComponent();
-            
+            this.BackColor = Color.MintCream;
+            this.MaximizeBox = false;
 
         }
 
@@ -135,6 +136,11 @@ namespace DiakNyelviszga
             finally {
                 connection.Close();
             }
+        }
+
+        private void addBtn_Click(object sender, EventArgs e) {
+            addDiak ad = new addDiak();
+            ad.Show();
         }
 
         
